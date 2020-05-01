@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Nathaniel Hendrix</title>
+    <link>/post/</link>
+    <description>Recent content in Posts on Nathaniel Hendrix</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 09 Apr 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>JAGS tutorial with replication of Joseph, et al</title>
+      <link>/post/2018/04/09/jags-tutorial-with-replication-of-joseph-et-al/</link>
+      <pubDate>Mon, 09 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018/04/09/jags-tutorial-with-replication-of-joseph-et-al/</guid>
+      <description>Objective and MotivationMy goal for this document is to teach the basic principles of conducting a Bayesian analysis of diagnostic data in JAGS (“Just Another Gibbs Sampler”). I am assuming a basic knowledge of Bayesian ideas, such as the definition of a prior, posterior, and likelihood. I will also not be explaining the concept of a Gibbs sampler (for that I recommend John Kruschke’s islands example). Rather, I’ll focus on creating a user-friendly document showing how to implement these ideas.</description>
+    </item>
+    
+  </channel>
+</rss>

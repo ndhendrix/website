@@ -1,0 +1,10 @@
+
+model {
+  for(i in 1:N){
+    y[i] ~ dbern(S*p+(1-C)*(1-p))
+  }
+  S ~ dbeta(21.96, 5.49)
+  C ~ dbeta(4.1, 1.76)
+  p ~ dunif(0, 1)
+}
+

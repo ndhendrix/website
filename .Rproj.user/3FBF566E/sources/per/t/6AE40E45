@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1588282752013.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2583519046",
+    "id" : "6AE40E45",
+    "lastKnownWriteTime" : 1588282763,
+    "last_content_update" : 1588282763854,
+    "path" : "~/Dropbox (Personal)/website/content/post/2018-04-09-jags-tutorial-with-replication-of-joseph-et-al.Rmd",
+    "project_path" : "content/post/2018-04-09-jags-tutorial-with-replication-of-joseph-et-al.Rmd",
+    "properties" : {
+        "cursorPosition" : "241,14",
+        "scrollLine" : "228"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
