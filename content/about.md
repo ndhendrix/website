@@ -1,6 +1,6 @@
 ---
 # author: Nathaniel Hendrix
-title: Nathaniel Hendrix.
+title: Nathaniel Hendrix
 ---
 
 I'm a health economist and postdoctoral research fellow at the [Harvard T.H. Chan School of Public Health](https://www.hsph.harvard.edu/) where I study cost-effectiveness methodology under the supervision of [Stéphane Verguet](https://www.hsph.harvard.edu/stephane-verguet/). 
