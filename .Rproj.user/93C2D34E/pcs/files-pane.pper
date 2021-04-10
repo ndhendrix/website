@@ -1,9 +1,9 @@
 {
-    "path" : "D:/ndhen/Dropbox (Personal)/website",
-    "sortOrder" : [
+    "path": "D:/ndhen/Dropbox (Personal)/website",
+    "sortOrder": [
         {
-            "ascending" : true,
-            "columnIndex" : 2
+            "ascending": true,
+            "columnIndex": 2
         }
     ]
 }
