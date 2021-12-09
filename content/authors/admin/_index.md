@@ -23,7 +23,7 @@ role: Postdoctoral Research Fellow
 social:
 - icon: envelope
   icon_pack: fas
-  link: /#contact
+  link: mailto:nhendrix@hsph.harvard.edu
 - display:
     header: true
   icon: twitter
