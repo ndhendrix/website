@@ -11,6 +11,7 @@ weight: 60
 
 title: Contact
 subtitle:
+active: false
 
 content:
   # Automatically link email and phone or display as text?
