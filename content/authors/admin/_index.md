@@ -13,7 +13,6 @@ highlight_name: false
 interests:
 - Health Economics
 - Cost-Effectiveness Methods 
-- Cancer Screening
 - Clinical Artificial Intelligence
 
 organizations:
