@@ -16,14 +16,13 @@ interests:
 - Clinical Artificial Intelligence
 
 organizations:
-- name: Harvard University
-  url: https://www.hsph.harvard.edu
-role: Postdoctoral Research Fellow
+- name: American Board of Family Medicine
+  url: https://www.theabfm.org
+role: Senior Researcher
 social:
 - icon: envelope
   icon_pack: fas
-  link: mailto:nhendrix@hsph.harvard.edu
-- display:
+  link: mailto:nhendrix@theabfm.org
     header: true
   icon: twitter
   icon_pack: fab
