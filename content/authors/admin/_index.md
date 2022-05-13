@@ -22,8 +22,8 @@ role: Senior Researcher
 social:
 - icon: envelope
   icon_pack: fas
-  link: mailto:nhendrix@theabfm.org
-    header: true
+  link: "mailto:nhendrix@theabfm.org"
+  header: true
   icon: twitter
   icon_pack: fab
   label: Follow me on Twitter
