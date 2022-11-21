@@ -18,7 +18,7 @@ interests:
 organizations:
 - name: American Board of Family Medicine
   url: https://www.theabfm.org
-role: Senior Researcher
+role: Researcher and data scientist
 social:
 - icon: envelope
   icon_pack: fas
