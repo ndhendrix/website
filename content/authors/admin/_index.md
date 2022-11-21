@@ -41,6 +41,6 @@ superuser: true
 title: Nathaniel Hendrix
 ---
 
-I'm a senior researcher with the [American Board of Family Medicine](https://www.theabfm.org) and their [Center for Professionalism and Value in Health Care](https://professionalismandvalue.org). My research focuses on cost-effectiveness analysis, pharmacoepidemiology, and artificial intelligence in primary care. Previously, I got my PharmD from the [University of Washington School of Pharmacy](https://sop.washington.edu), my PhD from UW's [Comparative Health Outcomes, Policy, and Economics (CHOICE) Institute](https://sop.washington.edu/choice/), and did a postdoc at the [Harvard T.H. Chan School of Public Health](https://www.hsph.harvard.edu).
+I'm a researcher and data scientist with the [American Board of Family Medicine](https://www.theabfm.org) and their [Center for Professionalism and Value in Health Care](https://professionalismandvalue.org). My research focuses on cost-effectiveness analysis, pharmacoepidemiology, and artificial intelligence in primary care. Previously, I got my PharmD from the [University of Washington School of Pharmacy](https://sop.washington.edu), my PhD from UW's [Comparative Health Outcomes, Policy, and Economics (CHOICE) Institute](https://sop.washington.edu/choice/), and did a postdoc at the [Harvard T.H. Chan School of Public Health](https://www.hsph.harvard.edu).
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "media/cv.pdf" "newtab" >}}CV{{< /staticref >}}.
