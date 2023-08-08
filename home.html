@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathaniel Hendrix</title>
+<!--Colors are from Wada Sanzo-->
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 40px;
+        background-color: #b5ffc2;
+	color: #5c8a73;
+    }
+    
+    header {
+        font-size: 2.5em;
+        margin-bottom: 40px;
+    }
+
+    a {
+    	color: #b319ab; 
+    }
+
+    .profile-section {
+        display: flex;
+        align-items: center; /* Align vertically to the center */
+        justify-content: flex-start;
+    }
+
+    .profile-photo {
+        lex: 0 0 auto; /* This ensures that the photo doesn't shrink or grow */
+        margin-right: 20px;
+    }
+
+    .profile-photo img {
+        height: 240px;
+        width: 180px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .description {
+        flex: 1
+    }
+
+    .description p {
+        max-width: 600px; 
+	text-align: left; 
+    }
+
+    .cv-link {
+        margin-top: 20px; /* Adds some space above the link for separation */
+        font-size: 1.2em; /* Makes the font size a bit larger than regular text */
+    }
+
+    .news-box {
+        background-color: #bdf226;
+        padding: 20px;
+        margin-top: 40px;
+	max-width: 840px;
+	text-align: left;
+    }
+
+    .news-item {
+        margin-bottom: 10px;
+    }
+</style>
+</head>
+<body>
+
+    <header>
+        Nathaniel Hendrix
+    </header>
+
+    <div class="profile-section">
+    <div class="profile-photo">
+        <img src="media/hendrix_portrait.jpeg" alt="Nathaniel Hendrix">
+    </div>
+    <div class="description">
+            <p>
+                I’m a researcher and data scientist with the American Board of Family Medicine and their Center for Professionalism and Value in Health Care. 
+	<p>My research focuses on natural language processing with clinical notes, epidemiology, and artificial intelligence for decision support.
+        </div>
+    </div>
+
+    <div class="cv-link">
+        <a href="https://twitter.com/YourTwitterHandle" target="_blank">My CV</a> (PDF) /
+	nhendrix at theabfm dot org / <a href="https://nathanielhendrix.substack.com" target="_blank">Substack</a> 
+    </div>
+
+    <div class="news-box">
+        <h2>News</h2>
+        <div class="news-item">
+            <b>August 7, 2023</b>: Preprint posted of work with NCATS on how prior COVID-19 affects infection severity: <a href="https://www.medrxiv.org/content/10.1101/2023.08.03.23293612v1">Influence of Prior SARS-CoV-2 Infection on COVID-19 Severity: Evidence from the National COVID Cohort Collaborative</a>
+        </div>
+        <div class="news-item">
+	    <b>June 14, 2023</b>: A policy brief I led titled <a href="https://www.jabfm.org/content/36/3/510.abstract">How Do Family Physicians Document Patients’ Social Needs in Electronic Health Records?</a> has been published in the <I>Journal of the American Board of Family Medicine</I>.
+        </div>
+        <div class="news-item">
+	    <b>April 7, 2023</b>: NASEM has posted a video of <a href = "https://www.youtube.com/watch?v=yCEJqX1q-oM">a talk I gave</a> on AI in medical education.
+        </div>
+        <div class="news-item">
+	    <b>March 23, 2023</b>: <I>Journal of General Internal Medicine</I> has published a paper I led titled <a href="https://link.springer.com/article/10.1007/s11606-023-08169-5">Variation in Family Physicians’ Experiences Across Different Electronic Health Record Platforms: a Descriptive Study</a>.
+        </div>
+
+    </div>
+
+</body>
+</html>
