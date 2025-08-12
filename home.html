@@ -5,77 +5,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nathaniel Hendrix</title>
 <!--Colors are from Wada Sanzo-->
-
 <!--next palette: https://sanzo-wada.dmbk.io/combination/321 -->
 <style>
+    :root {
+        /* Primary Color Palette */
+        --bg-primary: #d1b0b3;      /* Main background */
+        --text-primary: #d50c42;    /* Main text color */
+        --link-color: #de4500;      /* Link color */
+        --accent-bg: #94ff94;       /* News box background */
+        
+        /* Neutral colors derived from palette */
+        --text-hidden: var(--bg-primary);  /* Hidden text (same as background) */
+        
+        /* Layout constants */
+        --max-content-width: 840px;
+        --base-margin: 40px;
+        --border-radius: 10px;
+    }
+
     body {
         font-family: Arial, sans-serif;
-        margin: 40px;
-        background-color: #d1b0b3;
-	color: #d50c42;
-	max-width: 840px;
+        margin: var(--base-margin);
+        background-color: var(--bg-primary);
+        color: var(--text-primary);
+        max-width: var(--max-content-width);
     }
     
     header {
         font-size: 2.5em;
-        margin-bottom: 40px;
+        margin-bottom: var(--base-margin);
     }
-
+    
     a {
-    	color: #de4500; 
+        color: var(--link-color); 
     }
-
-	.hidden {
+    
+    .hidden {
         font-family: Arial, sans-serif;
-        margin: 40px;
-        background-color: #d1b0b3;
-	color: #d1b0b3;
-	max-width: 840px;
+        margin: var(--base-margin);
+        background-color: var(--bg-primary);
+        color: var(--text-hidden);
+        max-width: var(--max-content-width);
     }
-
+    
     .profile-section {
         display: flex;
-        align-items: center; /* Align vertically to the center */
+        align-items: center;
         justify-content: flex-start;
     }
-
+    
     .profile-photo {
-        lex: 0 0 auto; /* This ensures that the photo doesn't shrink or grow */
+        flex: 0 0 auto;
         margin-right: 20px;
     }
-
+    
     .profile-photo img {
         height: 240px;
         width: 180px;
         object-fit: cover;
-        border-radius: 10px;
+        border-radius: var(--border-radius);
     }
-
+    
     .description {
-        flex: 1
+        flex: 1;
     }
-
+    
     .description p {
         max-width: 600px; 
-	text-align: left; 
+        text-align: left; 
     }
-
+    
     .cv-link {
-        margin-top: 20px; /* Adds some space above the link for separation */
-        font-size: 1.2em; /* Makes the font size a bit larger than regular text */
+        margin-top: 20px;
+        font-size: 1.2em;
     }
-
+    
     .news-box {
-        background-color: #94ff94;
+        background-color: var(--accent-bg);
         padding: 20px;
-        margin-top: 40px;
-	max-width: 840px;
-	text-align: left;
+        margin-top: var(--base-margin);
+        max-width: var(--max-content-width);
+        text-align: left;
     }
-
+    
     .news-item {
         margin-bottom: 10px;
     }
+
+    /* Alternative color schemes - uncomment one to use */
+    /*
+    Alternative Palette 1: Muted Earth Tones
+    :root {
+        --bg-primary: #e8dcc0;
+        --text-primary: #8b4513;
+        --link-color: #cd853f;
+        --accent-bg: #f0e68c;
+    }
+    */
+
+    /*
+    Alternative Palette 2: Cool Blues
+    :root {
+        --bg-primary: #e6f3ff;
+        --text-primary: #1e3a8a;
+        --link-color: #3b82f6;
+        --accent-bg: #bfdbfe;
+    }
+    */
+
+    
+    /* Alternative Palette 3: Warm Sunset */
+    :root {
+        --bg-primary: #fef3e2;
+        --text-primary: #92400e;
+        --link-color: #ea580c;
+        --accent-bg: #fed7aa;
+    }
+    
 </style>
 </head>
 <body>
