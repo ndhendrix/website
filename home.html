@@ -247,6 +247,8 @@
       opacity: 0.16;
     }
 
+    .seam svg { filter: drop-shadow(0 0 6px rgba(53,242,255,0.12)); }
+
     /* Seam 1: after hero — teal-to-violet gradient bar, right-aligned */
     .seam-hero {
       margin-bottom: 0;
@@ -363,8 +365,13 @@
       transition: background 0.15s;
     }
 
-    .news-item:hover { background: rgba(61, 142, 145, 0.04); }
-    .news-item:hover .news-date { color: var(--accent); }
+    .news-item:hover {
+    background: linear-gradient(
+      90deg,
+      rgba(148,255,148,0.18),
+      rgba(53,242,255,0.10),
+      rgba(255,245,158,0.10)
+    );
 
     .news-date {
       font-family: var(--font-label);
@@ -508,7 +515,7 @@
         <rect x="7" y="8" width="4" height="4" fill="var(--accent)"/>
         <rect x="14" y="6" width="4" height="6" fill="var(--accent)"/>
         <rect x="21" y="4" width="4" height="8" fill="var(--accent)"/>
-        <rect x="28" y="2" width="4" height="10" fill="var(--accent-violet)"/>
+        <rect x="28" y="2" width="4" height="10" fill="var(--neon-cyan)"/>
         <rect x="35" y="4" width="4" height="8" fill="var(--accent)"/>
         <rect x="42" y="6" width="4" height="6" fill="var(--accent)"/>
         <rect x="49" y="8" width="4" height="4" fill="var(--accent-warm)"/>
