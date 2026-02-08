@@ -6,23 +6,40 @@
   <title>Nathaniel Hendrix</title>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --bg: #f0ede6;
-      --bg-panel: #ffffff;
-      --text: #2a2a28;
-      --text-secondary: #6b6b65;
-      --accent: #3d8e91;
-      --accent-warm: #c44a3c;
-      --accent-soft: #e0eeef;
-      --accent-violet: #7b6baa;
-      --accent-amber: #c49a3c;
-      --rule: #ccc9c0;
-      --rule-light: #dddad2;
-      --font-display: 'Space Grotesk', system-ui, sans-serif;
-      --font-body: 'Source Serif 4', Georgia, serif;
-      --font-code: 'JetBrains Mono', Consolas, monospace;
-      --font-label: 'Space Mono', 'Courier New', monospace;
-    }
+:root {
+  --bg: #f0ede6;
+  --bg-panel: #ffffff;
+  --text: #2a2a28;
+  --text-secondary: #6b6b65;
+
+  /* Base accents (keep Claude’s calm palette) */
+  --accent: #3d8e91;         /* teal */
+  --accent-warm: #c44a3c;    /* warm red */
+  --accent-soft: #e0eeef;
+  --accent-violet: #7b6baa;
+  --accent-amber: #c49a3c;
+
+  /* NEW: neon “annotation inks” (use sparingly) */
+  --neon-mint: #94ff94;      /* from your original site */
+  --neon-lemon: #fff59e;     /* from your original site */
+  --neon-coral: #ff4d6d;     /* saturated warm pop */
+  --neon-cyan: #35f2ff;      /* bright interface cyan */
+  --neon-violet: #b190ff;    /* electric violet */
+
+  /* NEW: rules + shadows */
+  --rule: #ccc9c0;
+  --rule-light: #dddad2;
+  --glow-soft: 0 0 0.65rem rgba(148, 255, 148, 0.25);
+  --glow-cyan: 0 0 0.8rem rgba(53, 242, 255, 0.22);
+  --glow-warm: 0 0 0.75rem rgba(255, 77, 109, 0.16);
+
+  /* Fonts unchanged */
+  --font-display: 'Space Grotesk', system-ui, sans-serif;
+  --font-body: 'Source Serif 4', Georgia, serif;
+  --font-code: 'JetBrains Mono', Consolas, monospace;
+  --font-label: 'Space Mono', 'Courier New', monospace;
+}
+
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -36,9 +53,19 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      box-shadow: inset 0 -0.12em 0 rgba(53, 242, 255, 0.0);
+      transition: box-shadow 0.15s, color 0.15s, background 0.15s;
+    }
+    
+    a:hover {
+      text-decoration: none;
+      color: var(--text);
+      box-shadow: inset 0 -0.55em 0 rgba(53, 242, 255, 0.35);
+    }
+    
     .page { max-width: 960px; margin: 0 auto; padding: 0 2rem; }
 
     /* === NAV === */
@@ -107,6 +134,22 @@
 
     .hero-bio strong { color: var(--text); font-weight: 600; }
 
+    .pip {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 1px;
+      margin-right: 0.35rem;
+      transform: translateY(1px);
+      border: 1px solid rgba(42,42,40,0.12);
+    }
+    
+    .pip--mint { background: var(--neon-mint); box-shadow: var(--glow-soft); }
+    .pip--lemon { background: var(--neon-lemon); }
+    .pip--cyan { background: var(--neon-cyan); box-shadow: var(--glow-cyan); }
+    .pip--violet { background: var(--neon-violet); }
+    .pip--coral { background: var(--neon-coral); box-shadow: var(--glow-warm); }
+    
     .hero-links {
       display: flex;
       flex-wrap: wrap;
@@ -135,6 +178,23 @@
       border-left: 3px solid var(--accent);
       padding: 1.5rem 1.75rem;
       margin-top: 0.25rem;
+      position: relative;
+    }
+    
+    .questions::before {
+      content: '';
+      position: absolute;
+      left: -3px;
+      top: 0;
+      width: 3px;
+      height: 100%;
+      background: linear-gradient(
+        to bottom,
+        var(--neon-mint),
+        var(--accent),
+        var(--neon-cyan)
+      );
+      box-shadow: var(--glow-cyan);
     }
 
     .questions h3 {
@@ -418,13 +478,13 @@
           I'm a researcher and data scientist with the <strong>American Board of Family Medicine</strong> and their Center for Professionalism and Value in Health Care. My work focuses on <strong>natural language processing</strong> of clinical notes, <strong>epidemiology</strong>, and <strong>artificial intelligence</strong> for decision support.
         </p>
         <div class="hero-links">
-          <a href="media/Hendrix_Nathaniel_CV.pdf" target="_blank">CV (PDF)</a>
+          <a href="media/Hendrix_Nathaniel_CV.pdf" target="_blank"><span class="pip pip--mint"></span>CV (PDF)</a>
           <span class="sep">·</span>
           nhendrix at theabfm dot org
           <span class="sep">·</span>
-          <a href="https://nathanielhendrix.substack.com" target="_blank">Substack</a>
+          <a href="https://nathanielhendrix.substack.com" target="_blank"><span class="pip pip--lemon"></span>Substack</a>
           <span class="sep">·</span>
-          <a href="https://bsky.app/profile/nhendrix.bsky.social" target="_blank">Bluesky</a>
+          <a href="https://bsky.app/profile/nhendrix.bsky.social" target="_blank"><span class="pip pip--cyan"></span>Bluesky</a>
         </div>
       </div>
 
