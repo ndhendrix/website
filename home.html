@@ -150,13 +150,31 @@
     .pip--violet { background: var(--neon-violet); }
     .pip--coral { background: var(--neon-coral); box-shadow: var(--glow-warm); }
     
-    .hero-links {
+    .hero-links{
       display: flex;
       flex-wrap: wrap;
-      gap: 0.5rem 1.25rem;
-      font-family: var(--font-label);
-      font-size: 0.72rem;
-      letter-spacing: 0.04em;
+      align-items: center;
+      gap: 0.35rem 1.1rem; /* row gap, column gap */
+      margin-top: 0.75rem;
+    }
+    
+    .hero-links a{
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;        /* pip → label spacing */
+      white-space: nowrap; /* prevents ugly mid-link wraps */
+    }
+    
+    .hero-links .sep{
+      color: var(--text-secondary);
+      opacity: 0.7;
+    }
+    
+    .hero-links .email{
+      font-family: var(--font-code); /* optional: “instrument panel” feel */
+      font-size: 0.95em;
+      color: var(--text-secondary);
+      white-space: nowrap;
     }
 
     .hero-links .sep { color: var(--rule); }
@@ -484,15 +502,15 @@
         <p class="hero-bio">
           I'm a researcher and data scientist with the <strong>American Board of Family Medicine</strong> and their Center for Professionalism and Value in Health Care. My work focuses on <strong>natural language processing</strong> of clinical notes, <strong>epidemiology</strong>, and <strong>artificial intelligence</strong> for decision support.
         </p>
-        <div class="hero-links">
-          <a href="media/Hendrix_Nathaniel_CV.pdf" target="_blank"><span class="pip pip--mint"></span>CV (PDF)</a>
-          <span class="sep">·</span>
-          nhendrix at theabfm dot org
-          <span class="sep">·</span>
-          <a href="https://nathanielhendrix.substack.com" target="_blank"><span class="pip pip--lemon"></span>Substack</a>
-          <span class="sep">·</span>
-          <a href="https://bsky.app/profile/nhendrix.bsky.social" target="_blank"><span class="pip pip--cyan"></span>Bluesky</a>
-        </div>
+      <div class="hero-links">
+        <a href="media/Hendrix_Nathaniel_CV.pdf" target="_blank"><span class="pip pip--mint"></span>CV (PDF)</a>
+        <span class="sep">·</span>
+        <span class="email">nhendrix at theabfm dot org</span>
+        <span class="sep">·</span>
+        <a href="https://nathanielhendrix.substack.com" target="_blank"><span class="pip pip--lemon"></span>Substack</a>
+        <span class="sep">·</span>
+        <a href="https://bsky.app/profile/nhendrix.bsky.social" target="_blank"><span class="pip pip--cyan"></span>Bluesky</a>
+      </div>
       </div>
 
       <div class="questions">
